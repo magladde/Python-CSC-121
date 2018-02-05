@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abiword PUBLIC "-//ABISOURCE//DTD AWML 1.0 Strict//EN" "http://www.abisource.com/awml.dtd">
+<abiword template="false" xmlns:ct="http://www.abisource.com/changetracking.dtd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="39" xmlns:dc="http://purl.org/dc/elements/1.1/" styles="unlocked" fileformat="1.0" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="0.99.2" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:en-US; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<!-- ======================================================================== -->
+<!-- This file is an AbiWord document.                                        -->
+<!-- AbiWord is a free, Open Source word processor.                           -->
+<!-- More information about AbiWord is available at http://www.abisource.com/ -->
+<!-- You should not edit this file by hand.                                   -->
+<!-- ======================================================================== -->
+
+<metadata>
+<m key="abiword.date_last_changed">Fri Jan 19 16:07:40 2018
+</m>
+<m key="abiword.generator">AbiWord</m>
+<m key="dc.creator">morgan</m>
+<m key="dc.date">Thu Jan 18 20:10:31 2018
+</m>
+<m key="dc.format">application/x-abiword</m>
+</metadata>
+<rdf>
+</rdf>
+<history version="2" edit-time="21450" last-saved="1516396060" uid="6bb2af18-fc84-11e7-8e4c-cebfc1b38d19">
+<version id="1" started="1516324231" uid="8b22ea08-fcb5-11e7-8e4c-cebfc1b38d19" auto="0" top-xid="24"/>
+<version id="2" started="1516396060" uid="c8a5c65a-fd5c-11e7-83d9-bc4269efccf9" auto="0" top-xid="39"/>
+</history>
+<styles>
+<s type="P" name="Normal" followedby="Current Settings" props="font-family:Times New Roman; margin-top:0pt; color:000000; margin-left:0pt; bgcolor:transparent; widows:2; font-style:normal; text-indent:0in; text-position:normal; margin-bottom:0pt; font-weight:normal; line-height:1.0; text-align:left; font-variant:normal; text-decoration:none; margin-right:0pt; font-size:12pt; font-stretch:normal"/>
+</styles>
+<pagesize pagetype="Letter" orientation="portrait" width="8.500000" height="11.000000" units="in" page-scale="1.000000"/>
+<section xid="15" props="page-margin-footer:0.5in; page-margin-header:0.5in">
+<p style="Normal" xid="16">Self test questions<c></c></p>
+<p style="Normal" xid="1">section 3.1<c></c></p>
+<p style="Normal" xid="2">1) Three forms of control in programming are sequential, selection and iterative control.<c></c></p>
+<p style="Normal" xid="3">2) Which of the following expressions evaluate to True?<c></c></p>
+<p style="Normal" xid="4">	a) (a), (b), (d)<c></c></p>
+<p style="Normal" xid="5">3) Which of the following Boolean expressions evaluate to True?<c></c></p>
+<p style="Normal" xid="6">	a) (a)<c></c></p>
+<p style="Normal" xid="7">4) What is the value of variable num after the following is executed?<c></c></p>
+<p style="Normal" xid="8">&gt;&gt;&gt; num = 10<c></c></p>
+<p style="Normal" xid="9">&gt;&gt;&gt; num = num + 5<c></c></p>
+<p style="Normal" xid="10">&gt;&gt;&gt; num == 20<c></c></p>
+<p style="Normal" xid="11">&gt;&gt;&gt; num = num + 1<c></c></p>
+<p style="Normal" xid="12">num is equal to 16<c></c></p>
+<p style="Normal" xid="13">5) What does the following expression evaluate to for name equal to ‘Ann’?<c></c></p>
+<p style="Normal" xid="17">	name in (‘Jacob’, ‘MaryAnn’, ‘Thomas’)<c></c></p>
+<p style="Normal" xid="18">	evaluates to false<c></c></p>
+<p style="Normal" xid="19">6) Evaluate the following Boolean expressions using the operator precedence rules of Python.<c></c></p>
+<p style="Normal" xid="21">	a) 10 &gt;= 8 and 5 != 3 - True<c></c></p>
+<p style="Normal" xid="22">	b)10&gt;= 8 and 5 == 3 or 14 &lt; 5 - False<c></c></p>
+<p style="Normal" xid="23">7) Which one of the following Boolean expressions is not logically equivalent to the other two?<c></c></p>
+<p style="Normal" xid="24"><c></c></p>
+<p style="Normal" xid="25">Section 3.2</p>
+<p style="Normal" xid="26">1) All if statements must contain either an else or elif header: (false)</p>
+<p style="Normal" xid="27">2) A compound statement is,</p>
+<p style="Normal" xid="28">	b) a statement that contains other statements</p>
+<p style="Normal" xid="29">3) Which of the following statements are true regarding headers in Python?</p>
+<p style="Normal" xid="30">	a) headers begin with keywords and end with a colon</p>
+<p style="Normal" xid="31">	c) all headers of the same compound statement must be indented the same amount</p>
+<p style="Normal" xid="32">4)Which of the following statements is true?</p>
+<p style="Normal" xid="33">	c) All headers must be indented the same amount as all other headers in the same</p>
+<p style="Normal" xid="37">	statement, and all statements in a given suite (or block) must be indented the same</p>
+<p style="Normal" xid="36">	amount.</p>
+<p style="Normal" xid="38">5) The elif header allows for</p>
+<p style="Normal" xid="39">	b) multi-way selection as a single if statement</p>
+</section>
+</abiword>
