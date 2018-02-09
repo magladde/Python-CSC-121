@@ -15,3 +15,12 @@ print('Term: ' + str(term_length), 'years')
 print()
 print('Interest Rate', end = '          ')
 print('Monthly Payment')
+
+# variable initialization
+interest_rates = list(range(3,19))
+for rate in interest_rates:
+	r = rate / 100 / 12
+	n = 12 * term_length
+	D = (((1 + r) ** n) - 1) / (r * (1 + r) ** n)
+	monthly_payment = loan_amount / D
+	print(rate, monthly_payment)
