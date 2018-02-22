@@ -31,7 +31,7 @@ def main():
 		grade_calculator(lab_scores, test_scores)
 	
 # define grade_calculator function
-def grade_calculator(lab_scores, test_scores, lab_percent = .5, test_percent = .5):
+def grade_calculator(lab_scores, test_scores, lab_percent = 50, test_percent = 50):
 	# calculate lab average
 	total = 0
 	for score in lab_scores:
