@@ -1,0 +1,4 @@
+Psychology, Davie Hall, 1075
+Sociology, Hamilton Hall, 0548
+English, Green Hall, 2817
+Computer Science, Sitterson Hall, 0614
