@@ -16,9 +16,10 @@ def main():
         print('Area:', rect_area, 'Perimeter:', rect_perimeter)
 
     elif choice == 2:
+        print('Value of PI in circulations:', circle.PI)
         radius = float(input('Enter radius of circle: '))
         circle_area = circle.area(radius)
-        circle_perimeter = circle.perimeter(radius)
+        circle_perimeter = circle.circumference(radius)
         print('Area:', circle_area, 'Perimeter:', circle_perimeter)
     else:
         print('Invalid choice')

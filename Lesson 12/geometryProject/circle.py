@@ -4,7 +4,7 @@ def area(radius):
 
     """ Returns area of circle with given radius """
 
-    return PI * radius * 2
+    return PI * radius**2
 
 
 def circumference(radius):
