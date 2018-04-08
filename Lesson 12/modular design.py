@@ -1,8 +1,30 @@
 def main():
-    get_year()
+
+    """ Displays calendar of the years chosen by the user """
+
+    # initialization
+    terminate = False
+
+    # program greeting
+    print('This program will display a calendar for a given year')
+
+    # continue to display calendar years until -1 entered
+    while not terminate:
+        year = get_year()
+
+        if year == -1:
+            termiante = True
+        else:
+            # construct calendar
+            calendar_year = constructCalYear(year)
+
+    # display calendar
+    displayCalendar(calendar_year)
+
 
 
 def get_year():
+
     """ Returns a year between 1800 and 2099, inclusive, or the value -1 """
 
     year = int(input('Enter year (yyyy) (-1 to quit): '))
@@ -19,7 +41,7 @@ def leapYear(year):
     if (year % 4 == 0) and (not (year % 100 == 0) or (year % 400 == 0)):
         leap_year = True
     else:
-        leap_year = Flase
+        leap_year = False
 
     return leap_year
 
@@ -88,7 +110,7 @@ def constructCalMonth (month_num, first_day, num_days_in_month):
     calendar_week = ''
 
     # init starting column
-    if first_day = 0:
+    if first_day == 0:
         starting_col = 7
     else:
         starting_col = first_day
@@ -148,6 +170,46 @@ def constructCalYear(year):
         first_day_of_month = (first_day_of_month + num_days_in_month) % 7
 
     return calendar_year
+
+
+def displayCalendar(calendar_year):
+
+    """ Displays a calendar_year on the screen three months across. """
+
+    # init
+    month_separator = format(' ', '8')
+    blank_week = format(' ', '21')
+
+    # display year
+    print('\n', calendar_year[0])
+
+    # display months three across
+    for month_index in [1, 4, 7, 10]:
+
+        # init
+        week = 1
+        lines_to_print = True
+
+        while lines_to_print:
+
+            # init
+            lines_to_print = False
+
+            # print weeks of months side-by-side
+            for k in range(month_index, month_index + 3):
+                if week <= len(calendar_year[k]):
+                    week_dates = calendar_year[k] [week -1]
+                    print(week_dates + blank_week[len(week_dates):], end = '')
+                    lines_to_print = True
+                else:
+                    print(blank_week, end = '')
+                print(month_separator, end = '')
+
+            # move to next screen line
+            print()
+
+            # increment week
+            week = week + 1
 
 
 main()
