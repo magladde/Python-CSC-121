@@ -34,3 +34,10 @@ class Course:
 
     def getQuota(self):
         return self.__quota
+
+    def setQuota(self, quota):
+        if quota < 0:
+            print('Quota cannot be negative.')
+        else:
+            self.__quota = quota
+            print('Quota changed.')

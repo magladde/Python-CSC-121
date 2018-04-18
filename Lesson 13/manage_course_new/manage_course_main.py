@@ -9,7 +9,7 @@ def main():
     oper = 1
     while oper != 0:
         oper = int(input('Enter 1 for add student, 2 for drop student, '
-                     '3 for course info, 0 for exit: '))
+                     '3 for course info, 4 for change quota, 0 for exit: '))
         if oper == 1:
             course1.add_student()
             print('Enrollment:', course1.getEnrollment())
@@ -23,6 +23,9 @@ def main():
             print('Quota:', course1.getQuota())
             print('Enrollment:', course1.getEnrollment())
             print()
+        elif oper == 4:
+            new_quota = int(input('Enter new quota: '))
+            course1.setQuota(new_quota)
 
 
 main()
