@@ -27,7 +27,6 @@ class Customer:
             if negative_flag == True and numeric_flag == True:
                 age_flag = False
         self.__age = int(age)
-        print('Age is:', self.__age)
         print()
 
     def Input_password(self):
@@ -67,7 +66,6 @@ class Customer:
                     lower_flag == True and upper_flag == True:
                 password_flag = False
         self.__password = self.__password + password
-        print('Password is:', self.__password)
         print('Valid password.')
         print()
 
@@ -87,8 +85,6 @@ class Customer:
             if num_flag == True and len_flag == True:
                 card_flag = False
             self.__card_number = card_num
-            print('Card number is:', self.__card_number)
-
         print()
 
     def input_security_code(self):
@@ -106,7 +102,7 @@ class Customer:
                 digit_flag = False
             if len_flag == True and digit_flag == True:
                 security_flag = False
-
+        self.__security_code = security_code
         print()
 
     def input_info(self):
@@ -122,17 +118,18 @@ class Customer:
     def verify_info(self):
         change_var = 1
         while change_var != 0:
-            print(self.__card_number)
             print('1. First name:', self.__first_name)
             print('2. Last name:', self.__last_name)
             print('3. Email address:', self.__email)
-            print('4. Password:' + self.__password)
-            print('5. Age:' + str(self.__age))
-            print('6. Card number:' + str(self.__card_number))
-            print('7. Security code:' + str(self.__security_code))
+            print('4. Password: ' + self.__password)
+            print('5. Age: ' + str(self.__age))
+            print('6. Card number: ' + str(self.__card_number))
+            print('7. Security code: ' + str(self.__security_code))
+            print()
             change_var = int(input("To correct any entry, enter the number "
-                                   "and press RETURN. IF everything is "
+                                   "and press RETURN. If everything is "
                                    "correct press 0:"))
+            print()
             if change_var == 1:
                 self.__first_name = input('Enter first name: ')
             if change_var == 2:
@@ -140,20 +137,20 @@ class Customer:
             if change_var == 3:
                 self.__email = input('Enter email address: ')
             if change_var == 4:
-                customer1.Input_password()
+                self.Input_password()
             if change_var == 5:
-                customer1.Input_age()
+                self.Input_age()
             if change_var == 6:
-                customer1.input_card_number()
+                self.input_card_number()
             if change_var == 7:
-                customer1.input_security_code()
+                self.input_security_code()
         print('Registration and verification completed for this customer.')
 
     def output_info(self):
        customer_info = ""
        customer_info = customer_info + self.__first_name + " "
        customer_info = customer_info + self.__last_name + " "
-       customer_info = customer_info + self.__age + " "
+       customer_info = customer_info + str(self.__age) + " "
        customer_info = customer_info + self.__email + " "
        customer_info = customer_info + self.__password + " "
        customer_info = customer_info + self.__card_number + " "
